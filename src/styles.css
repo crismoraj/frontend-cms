@@ -1,1 +1,488 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  background-color: #f2f2f2 !important;
+}
+
+.container{
+  
+  background-color: #FFF;
+}
+
+.alto_container{
+  height: 84vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  background-color: #6F87A6;
+  color: #FFF;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+.bodyContent{
+  padding-top: 20px;
+}
+
+.toolbar a {
+  color: #FFF;
+  font-weight: 600;
+  padding: 0px 6px;
+  font-size: 14px;
+}
+
+.toolbar a:visited {
+  color: #FFF;
+  font-weight: 600;
+  padding: 0px 6px;
+  font-size: 14px;
+}
+
+.toolbar a:hover {
+  color: #373640;
+  text-decoration: none;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover {
+  opacity: 0.8;
+}
+
+.second{
+  color:#BF939B !important;
+  font-weight: 100;
+}
+
+.content {
+  display: flex;
+  margin: 20px auto 32px;
+  padding: 0 16px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-footer {
+  background-color: #f7f7f7;
+  border-top: 1px solid #ccc;
+  line-height: 1;
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+  overflow: hidden;
+}
+
+.navbar-brand{
+  padding:0px !important;
+  margin:0px !important;
+}
+.nav-footer-access, .nav-footer-access *, .nav-footer-access :after, .nav-footer-access :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.centrar_footer{
+padding: 20px;
+display: flex;
+justify-content: center;
+}
+
+svg.material-icons {
+  height: 24px;
+  width: auto;
+}
+
+svg.material-icons:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card svg.material-icons path {
+  fill: #888;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card {
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 280px;
+  width: 250px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+  color: #373640 !important;
+  text-decoration: none !important;
+  background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: bottom;
+    text-align: center;
+}
+.text_card{
+  vertical-align: bottom;
+  padding-top: 186px;
+}
+
+.card-container .card:not(:last-child) {
+  margin-right: 0;
+}
+
+.card.card-small {
+  height: 16px;
+  width: 168px;
+}
+
+.card-container .card:not(.highlight-card) {
+  cursor: pointer;
+}
+
+.card-container .card:not(.highlight-card):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.card-container .card:not(.highlight-card):hover .material-icons path {
+  fill: rgb(105, 103, 103);
+}
+
+.card.highlight-card {
+  background-color: #4444;
+  color: white;
+  font-weight: 600;
+  border: none;
+  width: auto;
+  min-width: 30%;
+  position: relative;
+  text-decoration: none;
+}
+
+.card.card.highlight-card span {
+  margin-left: 60px;
+}
+.card a, a:hover{
+  text-decoration: none;
+  color: #BF939B !important;
+}
+
+svg#rocket {
+  width: 80px;
+  position: absolute;
+  left: -10px;
+  top: -24px;
+}
+
+svg#rocket-smoke {
+  height: calc(100vh - 95px);
+  position: absolute;
+  top: 10px;
+  right: 180px;
+  z-index: -10;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #4444;;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #373640;
+}
+
+.terminal {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 6px;
+  padding-top: 45px;
+  margin-top: 8px;
+  overflow: hidden;
+  background-color: rgb(15, 15, 16);
+}
+
+.terminal::before {
+  content: "\2022 \2022 \2022";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: rgb(58, 58, 58);
+  color: #c2c3c4;
+  width: 100%;
+  font-size: 2rem;
+  line-height: 0;
+  padding: 14px 0;
+  text-indent: 4px;
+}
+
+.terminal pre {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  color: white;
+  padding: 0 1rem 1rem;
+  margin: 0;
+}
+
+.circle-link {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  margin: 8px;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 1s ease-out;
+}
+
+.circle-link:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
+
+.github-star-badge {
+  color: #24292e;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 3px 10px;
+  border: 1px solid rgba(27, 31, 35, .2);
+  border-radius: 3px;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+  margin-left: 4px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.github-star-badge:hover {
+  background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+  border-color: rgba(27, 31, 35, .35);
+  background-position: -.5em;
+}
+
+.github-star-badge .material-icons {
+  height: 16px;
+  width: 16px;
+  margin-right: 4px;
+}
+
+svg#clouds {
+  position: fixed;
+  bottom: -160px;
+  left: -230px;
+  z-index: -10;
+  width: 1920px;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+
+  .card-container>*:not(.circle-link),
+  .terminal {
+    width: 100%;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
+
+  svg#rocket-smoke {
+    right: 120px;
+    transform: rotate(-5deg);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.navbar {
+  margin-top: 28px;
+  background: #FFF;
+  border-bottom: solid 0.5px #eee;
+  color: #373640;
+  padding: .3rem .5rem !important;
+}
+
+.dropdown-menu {
+  left: -106px !important;
+}
+
+.navbar a{
+  color: #373640;
+  cursor: pointer;
+}
+
+.navbar a:hover{
+  color: #6F87A6;
+}
+
+.espacio_menu_sup {
+  width: 20px;
+  
+}
+.separa{
+    padding-left: 40px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  color:#ccc;
+}
+
+
+#search_truck::placeholder {
+  font-size: 14px;
+  color:#ccc;
+}
+
+.minh-100 {
+  height: 82vh;
+}
+.centrar{
+  text-align: center;
+}
 /* You can add global styles to this file, and also import other style files */
+.form-group {
+  position: relative;
+}
+
+.check_green {
+  position: absolute;
+  color: #1ed12d;
+  opacity: 1;
+  top: 38px;
+  right: 6px;
+}
+.check_red {
+  position: absolute;
+  color: #bb2929;
+  opacity: 1;
+  top: 38px;
+  right: 6px;
+}
+
+.form-control {
+  padding-right: 26px;
+}
+
+.avatar_edit{
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.avatar_mask{
+  width: 40px;
+  height: 40px;
+  border-radius: 2000px;
+  overflow: hidden;
+}
+
+.avatar_mask img{
+  width: 40px;
+}
+
+.avatar_mask_profile{
+  width: 100px;
+  height: 100px;
+  border-radius: 2000px;
+  overflow: hidden;
+}
+
+.avatar_mask_profile img{
+  width: 100px;
+}
+
+footer{
+  color: lightgray;
+}
+
+.content-foot{
+  padding-left:14px;
+}
+
+.card-header a{
+  color: #444;
+}
+
+.card-header a:hover{
+  text-decoration: none;
+  color: #666;
+}
+.post-image{
+  height: 200px;
+  overflow: hidden;
+}

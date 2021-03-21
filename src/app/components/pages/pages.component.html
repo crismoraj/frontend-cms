@@ -1,0 +1,8 @@
+<div class="container alto_container">
+    <div class="col-md-12 pt-4 pb-4">
+        <h1 *ngFor="let element of bodyContent" [innerHTML]='element.name'>
+        </h1>
+        <div class="bodyContent" *ngFor="let element of bodyContent" [innerHTML]='element.content'>
+        </div>
+    </div>
+</div>
